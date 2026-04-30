@@ -1,7 +1,7 @@
 import type { ResumeData } from "@/lib/types";
 
 export const RESUME_DATA: ResumeData = {
-  name: "Javier Solana",
+  name: "Javier Solana Huertas",
   initials: "JS",
   location: "Ciudad Real, Spain, CET",
   locationLink: "https://www.google.com/maps/place/Ciudad+Real",
