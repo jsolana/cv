@@ -13,7 +13,6 @@ export const RESUME_DATA: ResumeData = {
   personalWebsiteUrl: "https://jsolana.github.io",
   contact: {
     email: "javiersolanahuertas@gmail.com",
-    tel: "+34678574560",
     social: [
       {
         name: "GitHub",
