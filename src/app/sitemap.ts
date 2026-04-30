@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://cv-jsolana.vercel.app";
+  const baseUrl = "https://jsolana-cv.vercel.app";
 
   return [
     {

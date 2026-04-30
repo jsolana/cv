@@ -9,7 +9,7 @@ import { ErrorBoundary } from "@/components/error-boundary";
 import { RESUME_DATA } from "@/data/resume-data";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cv-jsolana.vercel.app"),
+  metadataBase: new URL("https://jsolana-cv.vercel.app"),
   title: {
     default: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     template: `%s | ${RESUME_DATA.name}`,

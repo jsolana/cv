@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://cv-jsolana.vercel.app/opengraph-image",
+        url: "https://jsolana-cv.vercel.app/opengraph-image",
         width: 1200,
         height: 630,
         alt: `${RESUME_DATA.name}'s profile picture`,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${RESUME_DATA.name} - Resume`,
     description: RESUME_DATA.about,
-    images: ["https://cv-jsolana.vercel.app/opengraph-image"],
+    images: ["https://jsolana-cv.vercel.app/opengraph-image"],
   },
 };
 
