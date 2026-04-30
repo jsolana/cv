@@ -22,7 +22,7 @@ export const RESUME_DATA: ResumeData = {
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/javier-solana-huertas-1156a99a/",
+        url: "https://www.linkedin.com/in/javier-solana-huertas/",
         icon: "linkedin",
       },
     ],
