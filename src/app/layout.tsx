@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: RESUME_DATA.personalWebsiteUrl,
+    url: "https://jsolana-cv.vercel.app",
     siteName: `${RESUME_DATA.name}'s CV`,
     title: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     description: RESUME_DATA.about,
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     creator: "@jsolana",
   },
   alternates: {
-    canonical: RESUME_DATA.personalWebsiteUrl,
+    canonical: "https://jsolana-cv.vercel.app",
   },
 };
 
