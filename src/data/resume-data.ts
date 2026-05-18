@@ -143,7 +143,7 @@ export const RESUME_DATA: ResumeData = {
   skills: [
     // Current focus
     "Platform Engineering",
-    "LLMs / AI Agents / MCP / Skills / ML",
+    "LLMs / AI Agents / RAG/ MCP / Skills / Machine Learning",
     "Chaos Engineering",
     // Languages
     "Go",
