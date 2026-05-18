@@ -57,7 +57,8 @@ export const RESUME_DATA: ResumeData = {
         "Kubernetes",
         "ArgoCD",
         "Platform Engineering",
-        "DevX",
+        "Developer Experience",
+        "AI",
       ],
       title: "Senior Software Engineer — Developer Experience (DevX)",
       start: "2024",
@@ -68,6 +69,7 @@ export const RESUME_DATA: ResumeData = {
         "Reduced deployment times by 100x through ArgoCD-based rollout optimisations",
         "Cut time-to-first-merge for new engineers by streamlining scaffolding, CI/CD, and onboarding tooling",
         "Established platform engineering standards and best practices adopted across 30+ engineering teams and 200+ engineers",
+        "Built and contributed to internal tools based on AI agents, MCP, skills systems, and RAG-based architectures to enhance developer experience.",
       ],
     },
     {
@@ -200,6 +202,59 @@ export const RESUME_DATA: ResumeData = {
       link: {
         label: "github.com/rfrancotechnologies",
         href: "https://github.com/rfrancotechnologies",
+      },
+    },
+    {
+      title: "AI Assistant for Backstage (RAG + TechDocs)",
+      techStack: [
+        "Python",
+        "FastAPI",
+        "LangChain",
+        "OpenAI",
+        "FAISS",
+        "RAG",
+        "Backstage"
+      ],
+      description:
+        "AI-powered assistant for Backstage built using a Retrieval-Augmented Generation (RAG) architecture. It enables conversational querying over technical documentation (TechDocs) using embeddings, semantic search, and a FAISS vector database. The system includes a FastAPI backend for document ingestion, embeddings generation, and streaming LLM responses, along with a lightweight Backstage plugin for seamless integration.",
+      link: {
+        label: "github.com/jsolana/backstage-ai-assistant",
+        href: "https://github.com/jsolana/backstage-ai-assistant",
+      },
+    },
+
+    {
+      title: "Reinforcement Learning Fundamentals",
+      techStack: [
+        "Python",
+        "Gymnasium",
+        "ALE-py",
+        "NumPy",
+        "Matplotlib",
+        "PyTorch",
+        "Reinforcement Learning"
+      ],
+      description:
+        "Educational project focused on the fundamentals of Reinforcement Learning. It explores core concepts such as Markov Decision Processes (MDPs), policies, value functions, and Q-learning through classic environments like Blackjack and Pong. The project includes preprocessing techniques for visual observations (grayscale conversion, resizing, frame stacking) and experimentation with Atari environments using Gymnasium and ALE.",
+      link: {
+        label: "github.com/jsolana/reinforcement-learning",
+        href: "https://github.com/jsolana/reinforcement-learning",
+      },
+    },
+    {
+      title: "Point & Click Toolkit (pctk)",
+      techStack: [
+        "Go",
+        "Game Development",
+        "SCUMM-inspired",
+        "Adventure Game Engine",
+        "Tooling"
+      ],
+      description:
+        "Work-in-progress toolkit for building Point & Click adventure games. Inspired by classic SCUMM-style engines, it provides foundational tools and systems to design and structure narrative-driven interactive environments. Built in Go with a focus on simplicity, extensibility, and game logic orchestration for adventure game development.",
+      link: {
+        label: "github.com/retroverb/rvrt-win",
+        href: "https://github.com/retroverb/rvrt-win",
       },
     },
   ],
