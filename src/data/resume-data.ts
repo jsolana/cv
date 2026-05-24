@@ -216,7 +216,7 @@ export const RESUME_DATA: ResumeData = {
         "Backstage"
       ],
       description:
-        "AI-powered assistant for Backstage built using a Retrieval-Augmented Generation (RAG) architecture. It enables conversational querying over technical documentation (TechDocs) using embeddings, semantic search, and a FAISS vector database. The system includes a FastAPI backend for document ingestion, embeddings generation, and streaming LLM responses, along with a lightweight Backstage plugin for seamless integration.",
+        "AI-powered assistant for Backstage built using a Retrieval-Augmented Generation (RAG) architecture. It enables conversational querying over technical documentation (TechDocs) using embeddings, semantic search, and a FAISS vector database.",
       link: {
         label: "github.com/jsolana/backstage-ai-assistant",
         href: "https://github.com/jsolana/backstage-ai-assistant",
@@ -235,7 +235,7 @@ export const RESUME_DATA: ResumeData = {
         "Reinforcement Learning"
       ],
       description:
-        "Educational project focused on the fundamentals of Reinforcement Learning. It explores core concepts such as Markov Decision Processes (MDPs), policies, value functions, and Q-learning through classic environments like Blackjack and Pong. The project includes preprocessing techniques for visual observations (grayscale conversion, resizing, frame stacking) and experimentation with Atari environments using Gymnasium and ALE.",
+        "Educational project focused on the fundamentals of Reinforcement Learning. It explores core concepts such as Markov Decision Processes (MDPs), policies, value functions, and Q-learning through classic environments like Blackjack and Pong.",
       link: {
         label: "github.com/jsolana/reinforcement-learning",
         href: "https://github.com/jsolana/reinforcement-learning",
@@ -247,11 +247,10 @@ export const RESUME_DATA: ResumeData = {
         "Go",
         "Game Development",
         "SCUMM-inspired",
-        "Adventure Game Engine",
-        "Tooling"
+        "Adventure Game Engine"
       ],
       description:
-        "Work-in-progress toolkit for building Point & Click adventure games. Inspired by classic SCUMM-style engines, it provides foundational tools and systems to design and structure narrative-driven interactive environments. Built in Go with a focus on simplicity, extensibility, and game logic orchestration for adventure game development.",
+        "Work-in-progress toolkit for building Point & Click adventure games. Inspired by classic SCUMM-style engines, it provides foundational tools and systems to design and structure narrative-driven interactive environments.",
       link: {
         label: "github.com/retroverb/rvrt-win",
         href: "https://github.com/retroverb/rvrt-win",
