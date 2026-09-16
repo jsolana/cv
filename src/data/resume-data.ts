@@ -8,7 +8,7 @@ export const RESUME_DATA: ResumeData = {
   about:
     "20+ years building distributed systems, developer platforms, and high-stakes products across mobility, healthcare, and gambling.",
   summary:
-    "I believe great software starts with great engineering foundations. Over 20 years I've gone from building healthcare and gambling systems to designing the platforms that let other engineers do their best work. Currently at Cabify, I focus on reducing friction across the entire development lifecycle — from the first commit to production — for 200+ engineers across 30+ teams.",
+    "I believe great software starts with great engineering foundations. Over 20 years, I've gone from building healthcare and gambling systems to designing platforms that enable other engineers to do their best work. My focus is on reducing friction across the entire development lifecycle — from the first commit to production — through better developer experience, platform engineering, observability, and AI-powered tooling.",
   avatarUrl: "https://avatars.githubusercontent.com/u/6834093?v=4",
   personalWebsiteUrl: "https://jsolana.github.io",
   contact: {
