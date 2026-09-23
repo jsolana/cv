@@ -9,7 +9,7 @@ export const RESUME_DATA: ResumeData = {
     "Product-minded Software Engineer · Platform Engineering · Developer Experience · AI · Distributed Systems",
   summary:
     "Senior Software Engineer with 20+ years of experience building distributed systems, developer platforms, and developer tooling across mobility, healthcare, and gambling. Experience spans Platform Engineering, Developer Experience, cloud-native architectures, observability, event-driven systems, and AI-powered developer tooling, with a strong focus on improving how engineering teams build, deploy, and operate software.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/6834093?v=4",
+  avatarUrl: "https://avatars.githubusercontent.com/u/6834093?s=400&v=4",
   personalWebsiteUrl: "https://jsolana.github.io",
   contact: {
     email: "javiersolanahuertas@gmail.com",
