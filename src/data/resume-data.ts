@@ -6,9 +6,9 @@ export const RESUME_DATA: ResumeData = {
   location: "Ciudad Real, Spain, CET",
   locationLink: "https://www.google.com/maps/place/Ciudad+Real",
   about:
-    "20+ years building distributed systems, developer platforms, and high-stakes products across mobility, healthcare, and gambling.",
+    "Product-minded Software Engineer · Platform Engineering · Developer Experience · AI · Distributed Systems",
   summary:
-    "I believe great software starts with great engineering foundations. Over 20 years, I've gone from building healthcare and gambling systems to designing platforms that enable other engineers to do their best work. My focus is on reducing friction across the entire development lifecycle — from the first commit to production — through better developer experience, platform engineering, observability, and AI-powered tooling.",
+    "Senior Software Engineer with 20+ years of experience building distributed systems, developer platforms, and developer tooling across mobility, healthcare, and gambling. Experience spans Platform Engineering, Developer Experience, cloud-native architectures, observability, event-driven systems, and AI-powered developer tooling, with a strong focus on improving how engineering teams build, deploy, and operate software.",
   avatarUrl: "https://avatars.githubusercontent.com/u/6834093?v=4",
   personalWebsiteUrl: "https://jsolana.github.io",
   contact: {
@@ -46,6 +46,12 @@ export const RESUME_DATA: ResumeData = {
       start: "2020",
       end: "2020",
     },
+    {
+      school: "Universidad de Castilla-La Mancha",
+      degree: "Master's in Artificial Intelligence",
+      start: "2026",
+      end: "Present",
+    },
   ],
   work: [
     {
@@ -68,7 +74,7 @@ export const RESUME_DATA: ResumeData = {
       highlights: [
         "Reduced deployment times by 100x through ArgoCD-based rollout optimisations",
         "Cut time-to-first-merge for new engineers by streamlining scaffolding, CI/CD, and onboarding tooling",
-        "Established platform engineering standards and best practices adopted across 30+ engineering teams and 200+ engineers",
+        "Established platform engineering standards and best practices adopted across 40+ engineering teams and 250+ engineers",
         "Built and contributed to internal tools based on AI agents, MCP, skills systems, and RAG-based architectures to enhance developer experience.",
       ],
     },
@@ -141,11 +147,27 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
   skills: [
-    // Current focus
+     // Engineering & Architecture
+    
+    "Software Architecture",
+    "Microservices",
+    "Event-Driven Architecture",
+    "Technical Leadership",
+    "System Design",
     "Platform Engineering",
-    "LLMs / AI Agents / RAG/ MCP / Skills / Machine Learning",
+    "Product-minded",
     "Chaos Engineering",
+    
+    // AI & Developer Tooling
+
+    "LLMs / AI Agents / RAG / MCP",
+    "Machine Learning",
+    "LangChain",
+    "Vector Databases",
+    "Ollama",
+    
     // Languages
+    
     "Go",
     "Rust",
     "Elixir",
@@ -154,24 +176,32 @@ export const RESUME_DATA: ResumeData = {
     "Bash",
     "Java / Spring Boot",
     ".NET / C#",
+    "Langchain",
     "Security / OWASP",
+    
     // Architecture & Messaging
-    "Microservices",
-    "Event-Driven Architecture",
+    
     "Apache Kafka / CDC",
     "gRPC / REST / GraphQL / AsyncAPI",
+    
     // Infrastructure & Cloud Native
+    
     "Kubernetes / Helm",
     "ArgoCD / FluxCD",
     "Docker",
+    "AWS",
     "CI/CD",
     "Backstage",
+    
     // Observability
+    
     "Grafana / Loki / Prometheus / Cortex",
     "OpenTelemetry",
+    
     // Data
+    
     "SQL / NoSQL",
-    "Vector Databases",
+    
   ],
   projects: [
     {
@@ -222,6 +252,45 @@ export const RESUME_DATA: ResumeData = {
         href: "https://github.com/jsolana/backstage-ai-assistant",
       },
     },
+    {
+      title: "Backstage CLI & MCP Server",
+
+      techStack: [
+      "Go",
+      "CLI",
+      "MCP",
+      "Backstage"
+      ],
+
+      description:
+      "A CLI and MCP server that gives developers and AI assistants fast, unified access to Backstage from the terminal or any MCP-compatible tool.",
+
+      link: {
+      label: "github.com/jsolana/backctl",
+      href: "https://github.com/jsolana/backctl",
+      },
+    },
+
+    {
+      title: "n8n Node for Backstage",
+
+      techStack: [
+        "TypeScript",
+        "n8n",
+        "Backstage",
+        "API",
+        "Workflow Automation"
+      ],
+
+      description:
+        "Custom n8n node for integrating Backstage (backctl) into automated workflows, enabling Backstage operations to be orchestrated directly from n8n.",
+
+      link: {
+        label: "github.com/jsolana/n8n-nodes-backstage",
+        href: "https://github.com/jsolana/n8n-nodes-backstage",
+      },
+    },
+
 
     {
       title: "Reinforcement Learning Fundamentals",
