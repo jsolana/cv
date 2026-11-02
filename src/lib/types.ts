@@ -40,7 +40,11 @@ export interface ResumeData {
     description: string;
     highlights?: readonly string[];
   }>;
-  skills: string[];
+  skills: Array<{
+    category: string;
+    items: string[];
+    featured?: boolean;
+  }>;
   projects: Array<{
     title: string;
     techStack: string[];

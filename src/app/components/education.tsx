@@ -64,7 +64,7 @@ interface EducationListProps {
  */
 export function Education({ education }: EducationListProps) {
   return (
-    <Section>
+    <Section className="print-force-new-page">
       <h2 className="text-xl font-bold" id="education-section">
         Education
       </h2>

@@ -5,9 +5,8 @@ export const RESUME_DATA: ResumeData = {
   initials: "JS",
   location: "Ciudad Real, Spain, CET",
   locationLink: "https://www.google.com/maps/place/Ciudad+Real",
-  about: "Software Engineer",
-  summary:
-    "Software Engineer with 20+ years of experience shipping products that create real value — from electronic health record platforms serving national health services to gambling and mobility solutions — and building AI platforms that support hundreds of engineers across the full software development lifecycle, from local development to production.",
+  summary: "",
+  about: "Software Engineer with 20+ years of experience shipping products that create real value — from electronic health record platforms serving national health services to gambling and mobility solutions — and building AI platforms that support hundreds of engineers.",
   avatarUrl: "https://avatars.githubusercontent.com/u/6834093?s=400&v=4",
   personalWebsiteUrl: "https://jsolana.github.io",
   contact: {
@@ -86,7 +85,6 @@ export const RESUME_DATA: ResumeData = {
         "Elixir",
         "Microservices",
         "Product Engineering",
-        "Route Optimization",
       ],
       title: "Senior Software Engineer — Business",
       start: "2022",
@@ -100,13 +98,11 @@ export const RESUME_DATA: ResumeData = {
       ],
     },
     {
-      company: "R. Franco / Mediatech",
+      company: "R. Franco",
       link: "https://github.com/rfrancotechnologies",
       badges: [
-        "On Site",
         ".NET / C#",
-        "Event-Driven Design",
-        "Microservices",
+        "Event-Driven Microservices",
         "Observability",
         "Product Engineering",
         "Management"
@@ -126,10 +122,9 @@ export const RESUME_DATA: ResumeData = {
       ],
     },
     {
-      company: "Indra / Soluziona",
+      company: "Indra Sw Labs",
       link: "https://www.indracompany.com",
       badges: [
-        "On Site",
         "Java",
         "Spring",
         "Angular",
@@ -145,7 +140,6 @@ export const RESUME_DATA: ResumeData = {
       description:
         "11 years delivering healthcare and public administration systems for regional governments and national health services, growing from developer to R&D lead.",
       highlights: [
-        "Progressed from developer to R&D Lead, leading teams of 3-6 engineers across healthcare and public administration projects",
         "Built and maintained IANUS, the Electronic Health Record integration platform for SERGAS (Galician Health Service)",
         "Led development of HCEMOV, a mobile healthcare solution for clinical mobility on Android using Spring Framework and Cordova",
         "Designed the MyMed health data platform with Angular, Spring Boot, and NoSQL, supporting highly interoperable healthcare models",
@@ -154,61 +148,99 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
   skills: [
-    // Engineering & Architecture
-
-    "Software Architecture",
-    "Microservices",
-    "Event-Driven Architecture",
-    "Technical Leadership",
-    "System Design",
-    "Platform Engineering",
-    "Product-minded",
-    "Chaos Engineering",
-
-    // AI & Developer Tooling
-
-    "LLMs / AI Agents / RAG / MCP",
-    "Machine Learning",
-    "LangChain",
-    "Vector Databases",
-    "Ollama",
-
-    // Languages
-
-    "Go",
-    "Rust",
-    "Elixir",
-    "Python",
-    "TypeScript",
-    "Bash",
-    "Java / Spring Boot",
-    ".NET / C#",
-    "Security / OWASP",
-
-    // Architecture & Messaging
-
-    "Apache Kafka / CDC",
-    "gRPC / REST / GraphQL / AsyncAPI",
-
-    // Infrastructure & Cloud Native
-
-    "Kubernetes / Helm",
-    "ArgoCD / FluxCD",
-    "Docker",
-    "AWS",
-    "CI/CD",
-    "Backstage",
-
-    // Observability
-
-    "Grafana / Loki / Prometheus / Cortex",
-    "OpenTelemetry",
-    "Kibana",
-
-    // Data
-
-    "MySQL / PostgreSQL / SQL Server / Oracle / SQLite",
-    "Elasticsearch / Redis",
+    {
+      category: "Engineering & Architecture",
+      featured: true,
+      items: [
+        "Software Architecture",
+        "Microservices",
+        "Event-Driven Architecture",
+        "Technical Leadership",
+        "System Design",
+        "Platform Engineering",
+        "Product-minded Engineering",
+        "Chaos Engineering",
+      ],
+    },
+    {
+      category: "AI & Developer Tooling",
+      featured: true,
+      items: [
+        "LLMs",
+        "AI Agents",
+        "RAG",
+        "MCP",
+        "Machine Learning",
+        "LangChain",
+        "Vector Databases",
+        "Ollama",
+      ],
+    },
+    {
+      category: "Languages & Frameworks",
+      items: [
+        "Go",
+        "Rust",
+        "Elixir",
+        "Python",
+        "TypeScript",
+        "Bash",
+        "Java / Spring Boot",
+        ".NET / C#",
+      ],
+    },
+    {
+      category: "Cloud Native & Infrastructure",
+      featured: true,
+      items: [
+        "Kubernetes",
+        "Helm",
+        "ArgoCD",
+        "FluxCD",
+        "Docker",
+        "AWS",
+        "CI/CD",
+        "Backstage",
+      ],
+    },
+    {
+      category: "Messaging & API Integration",
+      items: [
+        "Apache Kafka",
+        "CDC",
+        "gRPC",
+        "REST",
+        "GraphQL",
+        "AsyncAPI",
+      ],
+    },
+    {
+      category: "Observability & Monitoring",
+      items: [
+        "Grafana",
+        "Loki",
+        "Prometheus",
+        "Cortex",
+        "OpenTelemetry",
+        "Kibana",
+      ],
+    },
+    {
+      category: "Data & Storage",
+      items: [
+        "MySQL",
+        "PostgreSQL",
+        "SQL Server",
+        "Oracle",
+        "SQLite",
+        "Elasticsearch",
+        "Redis",
+      ],
+    },
+    {
+      category: "Security",
+      items: ["OWASP"],
+    },
   ],
   projects: [
     {

@@ -1,15 +1,7 @@
-import { Badge } from "@/components/ui/badge";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import type { RESUME_DATA } from "@/data/resume-data";
 
-type ProjectTags = readonly string[];
+type Project = (typeof RESUME_DATA)["projects"][number];
 
 interface ProjectLinkProps {
   title: string;
@@ -24,91 +16,58 @@ function ProjectLink({ title, link }: ProjectLinkProps) {
     return <span>{title}</span>;
   }
 
+  const displayUrl = link.replace("https://", "").replace("www.", "").replace(/\/$/, "");
+
   return (
     <>
       <a
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-1 hover:underline"
+        className="group inline-flex items-center gap-1.5 font-medium hover:underline"
         aria-label={`${title} project (opens in new tab)`}
       >
         {title}
         <span
-          className="size-1 rounded-full bg-green-500"
+          className="size-1.5 rounded-full bg-green-500 transition-transform group-hover:scale-125"
           title="Active project indicator"
           aria-hidden="true"
         />
       </a>
       <div
-        className="hidden font-mono text-xs underline print:visible"
+        className="hidden font-mono text-[10px] text-muted-foreground print:block print:mt-0.5"
         aria-hidden="true"
       >
-        {link.replace("https://", "").replace("www.", "").replace("/", "")}
+        {displayUrl}
       </div>
     </>
   );
 }
 
-interface ProjectTagsProps {
-  tags: ProjectTags;
+interface ProjectListProps {
+  projects: readonly Project[];
 }
 
 /**
- * Renders a list of technology tags used in the project
+ * Renders a compact list of projects as rows separated by subtle dividers
  */
-function ProjectTags({ tags }: ProjectTagsProps) {
-  if (tags.length === 0) return null;
-
+function ProjectList({ projects }: ProjectListProps) {
   return (
-    <ul
-      className="mt-2 flex list-none flex-wrap gap-1 p-0"
-      aria-label="Technologies used"
-    >
-      {tags.map((tag) => (
-        <li key={tag}>
-          <Badge
-            className="px-1 py-0 text-[10px] print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
-            variant="secondary"
+    <ul className="list-none divide-y divide-border/60 p-0">
+      {projects.map((project) => (
+        <li key={project.title} className="py-2.5 first:pt-1 last:pb-1">
+          <h3 className="text-sm">
+            <ProjectLink title={project.title} link={project.link?.href} />
+          </h3>
+          <p
+            className="mt-1 text-pretty text-xs leading-relaxed text-foreground/70 print:mt-0.5 print:text-[10px] print:leading-snug"
+            aria-label="Project description"
           >
-            {tag}
-          </Badge>
+            {project.description}
+          </p>
         </li>
       ))}
     </ul>
-  );
-}
-
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  tags: ProjectTags;
-  link?: string;
-}
-
-/**
- * Card component displaying project information
- */
-function ProjectCard({ title, description, tags, link }: ProjectCardProps) {
-  return (
-    <Card className="flex h-full flex-col overflow-hidden border p-3">
-      <CardHeader>
-        <div className="space-y-1">
-          <CardTitle className="text-base">
-            <ProjectLink title={title} link={link} />
-          </CardTitle>
-          <CardDescription
-            className="text-pretty font-mono text-xs print:text-[10px]"
-            aria-label="Project description"
-          >
-            {description}
-          </CardDescription>
-        </div>
-      </CardHeader>
-      <CardContent className="mt-auto flex">
-        <ProjectTags tags={tags} />
-      </CardContent>
-    </Card>
   );
 }
 
@@ -117,33 +76,17 @@ interface ProjectsProps {
 }
 
 /**
- * Section component displaying all side projects
+ * Section component displaying all side projects as a single grouped list
  */
 export function Projects({ projects }: ProjectsProps) {
   return (
-    <Section className="scroll-mb-16 print:space-y-4">
+    <Section
+      className="scroll-mb-16 print-force-new-page print:space-y-3"
+    >
       <h2 className="text-xl font-bold" id="side-projects">
         Side projects
       </h2>
-      <div
-        className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2"
-        role="feed"
-        aria-labelledby="side-projects"
-      >
-        {projects.map((project) => (
-          <article
-            key={project.title}
-            className="h-full transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm print:hover:translate-y-0 print:hover:shadow-none"
-          >
-            <ProjectCard
-              title={project.title}
-              description={project.description}
-              tags={project.techStack}
-              link={project.link?.href}
-            />
-          </article>
-        ))}
-      </div>
+      <ProjectList projects={projects} />
     </Section>
   );
 }
