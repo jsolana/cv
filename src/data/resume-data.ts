@@ -7,7 +7,7 @@ export const RESUME_DATA: ResumeData = {
   locationLink: "https://www.google.com/maps/place/Ciudad+Real",
   about: "Software Engineer",
   summary:
-    "Software Engineer with 20+ years of experience shipping products that create real value — from electronic health record platforms serving national health services to gambling and mobility solutions — and building AI platforms that supports hundreds of engineers across the full software development lifecycle, from local development to production.",
+    "Software Engineer with 20+ years of experience shipping products that create real value — from electronic health record platforms serving national health services to gambling and mobility solutions — and building AI platforms that support hundreds of engineers across the full software development lifecycle, from local development to production.",
   avatarUrl: "https://avatars.githubusercontent.com/u/6834093?s=400&v=4",
   personalWebsiteUrl: "https://jsolana.github.io",
   contact: {
