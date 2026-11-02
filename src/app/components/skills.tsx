@@ -114,14 +114,9 @@ interface SkillsProps {
 export function Skills({ skills, className }: SkillsProps) {
   return (
     <Section className={className}>
-      <div>
-        <h2 className="text-xl font-bold" id="skills-section">
-          Technical Expertise
-        </h2>
-        <p className="font-mono text-xs text-muted-foreground print:text-[10px]">
-          Engineering, Architecture &amp; Technology Stack
-        </p>
-      </div>
+      <h2 className="text-xl font-bold" id="skills-section">
+        Technical Expertise
+      </h2>
       <div
         className="grid grid-cols-1 gap-2 sm:grid-cols-2 print:grid-cols-2 print:gap-1.5"
         aria-label="Skill categories"
