@@ -5,10 +5,9 @@ export const RESUME_DATA: ResumeData = {
   initials: "JS",
   location: "Ciudad Real, Spain, CET",
   locationLink: "https://www.google.com/maps/place/Ciudad+Real",
-  about:
-    "Product-minded Software Engineer · Platform Engineering · Developer Experience · AI · Distributed Systems",
+  about: "Software Engineer",
   summary:
-    "Senior Software Engineer with 20+ years of experience building distributed systems, developer platforms, and developer tooling across mobility, healthcare, and gambling. Experience spans Platform Engineering, Developer Experience, cloud-native architectures, observability, event-driven systems, and AI-powered developer tooling, with a strong focus on improving how engineering teams build, deploy, and operate software.",
+    "Software Engineer with 20+ years of experience shipping products that create real value — from electronic health record platforms serving national health services to gambling and mobility solutions — and building AI platforms that supports hundreds of engineers across the full software development lifecycle, from local development to production.",
   avatarUrl: "https://avatars.githubusercontent.com/u/6834093?s=400&v=4",
   personalWebsiteUrl: "https://jsolana.github.io",
   contact: {
@@ -63,8 +62,8 @@ export const RESUME_DATA: ResumeData = {
         "Kubernetes",
         "ArgoCD",
         "Platform Engineering",
-        "Developer Experience",
         "AI",
+        "Agents"
       ],
       title: "Senior Software Engineer — Developer Experience (DevX)",
       start: "2024",
@@ -72,7 +71,7 @@ export const RESUME_DATA: ResumeData = {
       description:
         "Leading the conceptualisation and evolution of the internal developer platform, automating and streamlining the full software development lifecycle — from local development to production.",
       highlights: [
-        "Reduced deployment times by 100x through ArgoCD-based rollout optimisations",
+        "Reduced ArgoCD deployment times by 100x — from multi-hour manifest generation spikes down to seconds — by profiling the Repo Server and CMP plugin and contributing the fixes upstream, enabling faster validation loops for 40+ product teams",
         "Cut time-to-first-merge for new engineers by streamlining scaffolding, CI/CD, and onboarding tooling",
         "Established platform engineering standards and best practices adopted across 40+ engineering teams and 250+ engineers",
         "Built and contributed to internal tools based on AI agents, MCP, skills systems, and RAG-based architectures to enhance developer experience.",
@@ -86,7 +85,8 @@ export const RESUME_DATA: ResumeData = {
         "Go",
         "Elixir",
         "Microservices",
-        "Business",
+        "Product Engineering",
+        "Route Optimization",
       ],
       title: "Senior Software Engineer — Business",
       start: "2022",
@@ -105,8 +105,11 @@ export const RESUME_DATA: ResumeData = {
       badges: [
         "On Site",
         ".NET / C#",
-        "Event-Driven Microservices",
+        "Event-Driven Design",
+        "Microservices",
         "Observability",
+        "Product Engineering",
+        "Management"
       ],
       title: "Senior Software Engineer → Software Architect",
       start: "2017",
@@ -114,6 +117,7 @@ export const RESUME_DATA: ResumeData = {
       description:
         "Shaped the technical direction of the IRIS gambling platform across .NET/C#, event-driven architecture, observability, CI/CD, and security.",
       highlights: [
+        "Led 35-person engineering organization",
         "Built and owned the observability stack: Grafana, Loki, Prometheus, Jaeger, and Elasticsearch on Docker",
         "Established CI/CD pipelines and test automation including OWASP and penetration testing",
         "Delivered performance and revenue improvements across core product lines",
@@ -132,6 +136,8 @@ export const RESUME_DATA: ResumeData = {
         "Android",
         "HL7",
         "FHIR",
+        "Product Engineering",
+        "Management"
       ],
       title: "Software Developer → Senior Software Engineer → R&D Lead",
       start: "2006",
@@ -139,6 +145,7 @@ export const RESUME_DATA: ResumeData = {
       description:
         "11 years delivering healthcare and public administration systems for regional governments and national health services, growing from developer to R&D lead.",
       highlights: [
+        "Progressed from developer to R&D Lead, leading teams of 3-6 engineers across healthcare and public administration projects",
         "Built and maintained IANUS, the Electronic Health Record integration platform for SERGAS (Galician Health Service)",
         "Led development of HCEMOV, a mobile healthcare solution for clinical mobility on Android using Spring Framework and Cordova",
         "Designed the MyMed health data platform with Angular, Spring Boot, and NoSQL, supporting highly interoperable healthcare models",
@@ -147,8 +154,8 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
   skills: [
-     // Engineering & Architecture
-    
+    // Engineering & Architecture
+
     "Software Architecture",
     "Microservices",
     "Event-Driven Architecture",
@@ -157,7 +164,7 @@ export const RESUME_DATA: ResumeData = {
     "Platform Engineering",
     "Product-minded",
     "Chaos Engineering",
-    
+
     // AI & Developer Tooling
 
     "LLMs / AI Agents / RAG / MCP",
@@ -165,9 +172,9 @@ export const RESUME_DATA: ResumeData = {
     "LangChain",
     "Vector Databases",
     "Ollama",
-    
+
     // Languages
-    
+
     "Go",
     "Rust",
     "Elixir",
@@ -176,32 +183,32 @@ export const RESUME_DATA: ResumeData = {
     "Bash",
     "Java / Spring Boot",
     ".NET / C#",
-    "Langchain",
     "Security / OWASP",
-    
+
     // Architecture & Messaging
-    
+
     "Apache Kafka / CDC",
     "gRPC / REST / GraphQL / AsyncAPI",
-    
+
     // Infrastructure & Cloud Native
-    
+
     "Kubernetes / Helm",
     "ArgoCD / FluxCD",
     "Docker",
     "AWS",
     "CI/CD",
     "Backstage",
-    
+
     // Observability
-    
+
     "Grafana / Loki / Prometheus / Cortex",
     "OpenTelemetry",
-    
+    "Kibana",
+
     // Data
-    
-    "SQL / NoSQL",
-    
+
+    "MySQL / PostgreSQL / SQL Server / Oracle / SQLite",
+    "Elasticsearch / Redis",
   ],
   projects: [
     {
@@ -243,7 +250,7 @@ export const RESUME_DATA: ResumeData = {
         "OpenAI",
         "FAISS",
         "RAG",
-        "Backstage"
+        "Backstage",
       ],
       description:
         "AI-powered assistant for Backstage built using a Retrieval-Augmented Generation (RAG) architecture. It enables conversational querying over technical documentation (TechDocs) using embeddings, semantic search, and a FAISS vector database.",
@@ -255,19 +262,14 @@ export const RESUME_DATA: ResumeData = {
     {
       title: "Backstage CLI & MCP Server",
 
-      techStack: [
-      "Go",
-      "CLI",
-      "MCP",
-      "Backstage"
-      ],
+      techStack: ["Go", "CLI", "MCP", "Backstage"],
 
       description:
-      "A CLI and MCP server that gives developers and AI assistants fast, unified access to Backstage from the terminal or any MCP-compatible tool.",
+        "A CLI and MCP server that gives developers and AI assistants fast, unified access to Backstage from the terminal or any MCP-compatible tool.",
 
       link: {
-      label: "github.com/jsolana/backctl",
-      href: "https://github.com/jsolana/backctl",
+        label: "github.com/jsolana/backctl",
+        href: "https://github.com/jsolana/backctl",
       },
     },
 
@@ -279,7 +281,7 @@ export const RESUME_DATA: ResumeData = {
         "n8n",
         "Backstage",
         "API",
-        "Workflow Automation"
+        "Workflow Automation",
       ],
 
       description:
@@ -291,7 +293,6 @@ export const RESUME_DATA: ResumeData = {
       },
     },
 
-
     {
       title: "Reinforcement Learning Fundamentals",
       techStack: [
@@ -301,7 +302,7 @@ export const RESUME_DATA: ResumeData = {
         "NumPy",
         "Matplotlib",
         "PyTorch",
-        "Reinforcement Learning"
+        "Reinforcement Learning",
       ],
       description:
         "Educational project focused on the fundamentals of Reinforcement Learning. It explores core concepts such as Markov Decision Processes (MDPs), policies, value functions, and Q-learning through classic environments like Blackjack and Pong.",
@@ -316,7 +317,7 @@ export const RESUME_DATA: ResumeData = {
         "Go",
         "Game Development",
         "SCUMM-inspired",
-        "Adventure Game Engine"
+        "Adventure Game Engine",
       ],
       description:
         "Work-in-progress toolkit for building Point & Click adventure games. Inspired by classic SCUMM-style engines, it provides foundational tools and systems to design and structure narrative-driven interactive environments.",
