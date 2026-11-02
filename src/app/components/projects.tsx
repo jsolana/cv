@@ -1,7 +1,32 @@
+import type { LucideIcon } from "lucide-react";
+import {
+  Boxes,
+  BrainCircuit,
+  Dna,
+  Gamepad2,
+  GraduationCap,
+  Package,
+  Server,
+  Workflow,
+} from "lucide-react";
 import { Section } from "@/components/ui/section";
 import type { RESUME_DATA } from "@/data/resume-data";
 
 type Project = (typeof RESUME_DATA)["projects"][number];
+
+/**
+ * Maps each project to a consistent line icon
+ */
+const PROJECT_ICONS: Record<string, LucideIcon> = {
+  Genetix: Dna,
+  Outbox: Package,
+  ".NET Observability & Event-Driven Libraries": Boxes,
+  "AI Assistant for Backstage (RAG + TechDocs)": BrainCircuit,
+  "Backstage CLI & MCP Server": Server,
+  "n8n Node for Backstage": Workflow,
+  "Reinforcement Learning Fundamentals": GraduationCap,
+  "Point & Click Toolkit (pctk)": Gamepad2,
+};
 
 interface ProjectLinkProps {
   title: string;
@@ -16,7 +41,10 @@ function ProjectLink({ title, link }: ProjectLinkProps) {
     return <span>{title}</span>;
   }
 
-  const displayUrl = link.replace("https://", "").replace("www.", "").replace(/\/$/, "");
+  const displayUrl = link
+    .replace("https://", "")
+    .replace("www.", "")
+    .replace(/\/$/, "");
 
   return (
     <>
@@ -54,19 +82,33 @@ interface ProjectListProps {
 function ProjectList({ projects }: ProjectListProps) {
   return (
     <ul className="list-none divide-y divide-border/60 p-0">
-      {projects.map((project) => (
-        <li key={project.title} className="py-2.5 first:pt-1 last:pb-1">
-          <h3 className="text-sm">
-            <ProjectLink title={project.title} link={project.link?.href} />
-          </h3>
-          <p
-            className="mt-1 text-pretty text-xs leading-relaxed text-foreground/70 print:mt-0.5 print:text-[10px] print:leading-snug"
-            aria-label="Project description"
+      {projects.map((project) => {
+        const Icon = PROJECT_ICONS[project.title];
+        return (
+          <li
+            key={project.title}
+            className="flex gap-x-2.5 py-2.5 first:pt-1 last:pb-1"
           >
-            {project.description}
-          </p>
-        </li>
-      ))}
+            {Icon && (
+              <Icon
+                className="mt-0.5 size-4 shrink-0 text-muted-foreground"
+                aria-hidden="true"
+              />
+            )}
+            <div className="min-w-0">
+              <h3 className="text-sm">
+                <ProjectLink title={project.title} link={project.link?.href} />
+              </h3>
+              <p
+                className="mt-1 text-pretty text-xs leading-relaxed text-foreground/70 print:mt-0.5 print:text-[10px] print:leading-snug"
+                aria-label="Project description"
+              >
+                {project.description}
+              </p>
+            </div>
+          </li>
+        );
+      })}
     </ul>
   );
 }
@@ -80,9 +122,7 @@ interface ProjectsProps {
  */
 export function Projects({ projects }: ProjectsProps) {
   return (
-    <Section
-      className="scroll-mb-16 print-force-new-page print:space-y-3"
-    >
+    <Section className="scroll-mb-16 print-force-new-page print:space-y-3">
       <h2 className="text-xl font-bold" id="side-projects">
         Side projects
       </h2>

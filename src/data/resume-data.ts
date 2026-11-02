@@ -27,16 +27,9 @@ export const RESUME_DATA: ResumeData = {
   education: [
     {
       school: "Universidad de Castilla-La Mancha",
-      degree:
-        "Technical Engineering in Computer Systems (Software Engineering)",
-      start: "2002",
-      end: "2007",
-    },
-    {
-      school: "Universidad de Castilla-La Mancha",
-      degree: "Expert in Video Game Development — Grade: Outstanding (9/10)",
-      start: "2012",
-      end: "2013",
+      degree: "Master's in Artificial Intelligence",
+      start: "2026",
+      end: "Present",
     },
     {
       school: "Cloud Native Computing Foundation",
@@ -46,9 +39,16 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       school: "Universidad de Castilla-La Mancha",
-      degree: "Master's in Artificial Intelligence",
-      start: "2026",
-      end: "Present",
+      degree: "Expert in Video Game Development — Grade: Outstanding (9/10)",
+      start: "2012",
+      end: "2013",
+    },
+    {
+      school: "Universidad de Castilla-La Mancha",
+      degree:
+        "Technical Engineering in Computer Systems (Software Engineering)",
+      start: "2002",
+      end: "2007",
     },
   ],
   work: [
@@ -68,12 +68,12 @@ export const RESUME_DATA: ResumeData = {
       start: "2024",
       end: null,
       description:
-        "Leading the conceptualisation and evolution of the internal developer platform, automating and streamlining the full software development lifecycle — from local development to production.",
+        "Leading the evolution of the **internal developer platform**, streamlining the full **software development lifecycle** — from local development to production.",
       highlights: [
-        "Reduced ArgoCD deployment times by 100x — from multi-hour manifest generation spikes down to seconds — by profiling the Repo Server and CMP plugin and contributing the fixes upstream, enabling faster validation loops for 40+ product teams",
-        "Cut time-to-first-merge for new engineers by streamlining scaffolding, CI/CD, and onboarding tooling",
-        "Established platform engineering standards and best practices adopted across 40+ engineering teams and 250+ engineers",
-        "Built and contributed to internal tools based on AI agents, MCP, skills systems, and RAG-based architectures to enhance developer experience.",
+        "**Reduced ArgoCD deployment times by 100x** by profiling the Repo Server and CMP plugin and contributing the fixes upstream, enabling faster validation loops for 40+ product teams",
+        "**Cut time-to-first-merge** for new engineers by streamlining scaffolding, CI/CD, and onboarding tooling",
+        "**Established platform engineering standards** adopted across **250+ engineers**",
+        "Built internal tools based on **AI agents**, **MCP**, skills systems, and **RAG** architectures",
       ],
     },
     {
@@ -90,11 +90,11 @@ export const RESUME_DATA: ResumeData = {
       start: "2022",
       end: "2023",
       description:
-        "Designed and delivered a new enterprise mobility solution for group and team transportation, extending the company's B2B portfolio.",
+        "**Designed and delivered a new enterprise mobility solution** for group and team transportation, extending the company's B2B portfolio.",
       highlights: [
-        "Drove 10x growth in B2B business volume through the new group transportation product",
-        "Collaborated cross-functionally with product, design, and operations to define service boundaries",
-        "Improved system performance and reliability through event-driven design patterns",
+        "**Drove 10x growth** in business volume for the new product line",
+        "Collaborated cross-functionally with product, design, and operations to define **service boundaries**",
+        "Improved system **performance** and **reliability** through **event-driven design patterns**",
       ],
     },
     {
@@ -105,20 +105,19 @@ export const RESUME_DATA: ResumeData = {
         "Event-Driven Microservices",
         "Observability",
         "Product Engineering",
-        "Management"
+        
       ],
       title: "Senior Software Engineer → Software Architect",
       start: "2017",
       end: "2022",
       description:
-        "Shaped the technical direction of the IRIS gambling platform across .NET/C#, event-driven architecture, observability, CI/CD, and security.",
+        "**Shaped the technical direction** of the **IRIS** gambling platform used across multiple regulated markets.",
       highlights: [
-        "Led 35-person engineering organization",
-        "Built and owned the observability stack: Grafana, Loki, Prometheus, Jaeger, and Elasticsearch on Docker",
-        "Established CI/CD pipelines and test automation including OWASP and penetration testing",
-        "Delivered performance and revenue improvements across core product lines",
-        "Ensured compliance with gambling regulations across multiple markets",
-        "Led integrations with third-party providers including sportsbooks and game suppliers",
+        "**Led 35-person engineering organization**",
+        "**Built and owned the observability stack**: **Grafana**, **Loki**, **Prometheus**, **Jaeger**, and **Elasticsearch**",
+        "**Established CI/CD pipelines** and test automation including **OWASP** and penetration testing",
+        "**Ensured compliance** with gambling regulations across multiple markets",
+        "**Led integrations** with third-party providers including sportsbooks and game suppliers",
       ],
     },
     {
@@ -132,18 +131,18 @@ export const RESUME_DATA: ResumeData = {
         "HL7",
         "FHIR",
         "Product Engineering",
-        "Management"
+        
       ],
       title: "Software Developer → Senior Software Engineer → R&D Lead",
       start: "2006",
       end: "2017",
       description:
-        "11 years delivering healthcare and public administration systems for regional governments and national health services, growing from developer to R&D lead.",
+        "**11+ years** delivering healthcare and public administration systems for regional governments and national health services.",
       highlights: [
-        "Built and maintained IANUS, the Electronic Health Record integration platform for SERGAS (Galician Health Service)",
-        "Led development of HCEMOV, a mobile healthcare solution for clinical mobility on Android using Spring Framework and Cordova",
-        "Designed the MyMed health data platform with Angular, Spring Boot, and NoSQL, supporting highly interoperable healthcare models",
-        "Implemented HL7, FHIR, DICOM, openEHR, and IHE integrations across multiple healthcare systems",
+        "**Built and maintained IANUS**, the Electronic Health Record integration platform for SERGAS (Galician Health Service)",
+        "**Led development of HCEMOV**, a clinical mobility Android app built with **Spring Framework** and **Cordova**",
+        "**Designed the MyMed health data platform** with **Angular**, **Spring Boot**, and **NoSQL**, supporting highly **interoperable healthcare models**",
+        "**Implemented DICOM, openEHR, and IHE interoperability standards** (**HL7** / **FHIR**)",
       ],
     },
   ],
@@ -185,8 +184,10 @@ export const RESUME_DATA: ResumeData = {
         "Python",
         "TypeScript",
         "Bash",
-        "Java / Spring Boot",
-        ".NET / C#",
+        "Java",
+        "Spring Boot",
+        ".NET",
+        "C#",
       ],
     },
     {

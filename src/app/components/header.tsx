@@ -52,14 +52,14 @@ function SocialButton({ href, iconType, label }: SocialButtonProps) {
   const IconComponent = ICON_MAP[iconType];
 
   return (
-    <Button className="size-8" variant="outline" size="icon" asChild={true}>
+    <Button className="size-9" variant="outline" size="icon" asChild={true}>
       <a
         href={href}
         aria-label={label}
         target="_blank"
         rel="noopener noreferrer"
       >
-        <IconComponent className="size-4" aria-hidden="true" />
+        <IconComponent className="size-5" aria-hidden="true" />
       </a>
     </Button>
   );
@@ -172,10 +172,12 @@ export function Header() {
           {RESUME_DATA.about}
         </p>
 
-        <LocationLink
-          location={RESUME_DATA.location}
-          locationLink={RESUME_DATA.locationLink}
-        />
+        <div className="!mt-6">
+          <LocationLink
+            location={RESUME_DATA.location}
+            locationLink={RESUME_DATA.locationLink}
+          />
+        </div>
 
         <ContactButtons
           contact={RESUME_DATA.contact}
