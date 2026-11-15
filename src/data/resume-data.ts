@@ -173,6 +173,8 @@ export const RESUME_DATA: ResumeData = {
         "LangChain",
         "Vector Databases",
         "Ollama",
+        "Agent Evaluation",
+        "LLM-as-a-Judge",
       ],
     },
     {
@@ -272,6 +274,16 @@ export const RESUME_DATA: ResumeData = {
       link: {
         label: "github.com/rfrancotechnologies",
         href: "https://github.com/rfrancotechnologies",
+      },
+    },
+    {
+      title: "Agent Evaluator",
+      techStack: ["Go", "React", "SQLite", "LLM-as-a-Judge", "Agent Evaluation"],
+      description:
+        "Agent-agnostic framework to evaluate conversational agents through multi-turn scenarios. Judges every turn with deterministic and LLM criteria, with traces, human annotations and run-to-run comparison to detect regressions.",
+      link: {
+        label: "github.com/jsolana/agent-evaluator",
+        href: "https://github.com/jsolana/agent-evaluator",
       },
     },
     {
