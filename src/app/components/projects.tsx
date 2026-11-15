@@ -24,7 +24,7 @@ const PROJECT_ICONS: Record<string, LucideIcon> = {
   Outbox: Package,
   ".NET Observability & Event-Driven Libraries": Boxes,
   "Agent Evaluator": ClipboardCheck,
-  COUCHFLIX: Sofa,
+  Couchflix: Sofa,
   "AI Assistant for Backstage (RAG + TechDocs)": BrainCircuit,
   "Backstage CLI & MCP Server": Server,
   "n8n Node for Backstage": Workflow,

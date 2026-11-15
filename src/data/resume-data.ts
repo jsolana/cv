@@ -287,7 +287,7 @@ export const RESUME_DATA: ResumeData = {
       },
     },
     {
-      title: "COUCHFLIX",
+      title: "Couchflix",
       techStack: [
         "Python",
         "FastAPI",
