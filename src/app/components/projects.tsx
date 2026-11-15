@@ -2,11 +2,13 @@ import type { LucideIcon } from "lucide-react";
 import {
   Boxes,
   BrainCircuit,
+  ClipboardCheck,
   Dna,
   Gamepad2,
   GraduationCap,
   Package,
   Server,
+  Sofa,
   Workflow,
 } from "lucide-react";
 import { Section } from "@/components/ui/section";
@@ -21,6 +23,8 @@ const PROJECT_ICONS: Record<string, LucideIcon> = {
   Genetix: Dna,
   Outbox: Package,
   ".NET Observability & Event-Driven Libraries": Boxes,
+  "Agent Evaluator": ClipboardCheck,
+  COUCHFLIX: Sofa,
   "AI Assistant for Backstage (RAG + TechDocs)": BrainCircuit,
   "Backstage CLI & MCP Server": Server,
   "n8n Node for Backstage": Workflow,
