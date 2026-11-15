@@ -287,6 +287,23 @@ export const RESUME_DATA: ResumeData = {
       },
     },
     {
+      title: "COUCHFLIX",
+      techStack: [
+        "Python",
+        "FastAPI",
+        "SQLite",
+        "JavaScript",
+        "Playwright",
+        "LLM Agents",
+      ],
+      description:
+        "Entertainment discovery app that recommends what to watch from your taste profile, history and streaming platforms. Multi-provider catalog architecture (TMDB), rules-based agent with optional OpenAI-compatible/Anthropic LLM, animated audiovisual profile radar, and offline unit and Playwright acceptance tests.",
+      link: {
+        label: "github.com/jsolana/couchflix",
+        href: "https://github.com/jsolana/couchflix",
+      },
+    },
+    {
       title: "AI Assistant for Backstage (RAG + TechDocs)",
       techStack: [
         "Python",
