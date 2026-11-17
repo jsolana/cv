@@ -374,18 +374,19 @@ export const RESUME_DATA: ResumeData = {
       },
     },
     {
-      title: "Point & Click Toolkit (pctk)",
+      title: "scummgo",
       techStack: [
         "Go",
+        "Lua",
+        "raylib",
         "Game Development",
         "SCUMM-inspired",
-        "Adventure Game Engine",
       ],
       description:
-        "Work-in-progress toolkit for building Point & Click adventure games. Inspired by classic SCUMM-style engines, it provides foundational tools and systems to design and structure narrative-driven interactive environments.",
+        "Toolkit for creating classic SCUMM-style point & click adventures (Monkey Island era) in Go. Games are a thin Go launcher plus Lua scripts for rooms, actors, dialogs and cutscenes, with assets described by YAML manifests and packed into binary resource files. Renders a retro 320x200 screen with the twelve classic verbs and inventory using raylib. Work in progress.",
       link: {
-        label: "github.com/retroverb/rvrt-win",
-        href: "https://github.com/retroverb/rvrt-win",
+        label: "github.com/jsolana/scummgo",
+        href: "https://github.com/jsolana/scummgo",
       },
     },
   ],
