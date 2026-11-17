@@ -304,6 +304,16 @@ export const RESUME_DATA: ResumeData = {
       },
     },
     {
+      title: "System Design Interviewer",
+      techStack: ["Python", "Gradio", "LLM Agents", "Mermaid", "System Design"],
+      description:
+        "Practice system for system design interviews. Combines a markdown knowledge base (concepts, problems, level expectations) with a Gradio app where an interviewer agent runs the session and an evaluator agent returns a radar chart, level estimate and feedback, plus a Mermaid whiteboard. Works with any OpenAI-compatible endpoint.",
+      link: {
+        label: "github.com/jsolana/system-design-interviewer",
+        href: "https://github.com/jsolana/system-design-interviewer",
+      },
+    },
+    {
       title: "AI Assistant for Backstage (RAG + TechDocs)",
       techStack: [
         "Python",

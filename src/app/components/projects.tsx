@@ -6,6 +6,7 @@ import {
   Dna,
   Gamepad2,
   GraduationCap,
+  Network,
   Package,
   Server,
   Sofa,
@@ -25,11 +26,12 @@ const PROJECT_ICONS: Record<string, LucideIcon> = {
   ".NET Observability & Event-Driven Libraries": Boxes,
   "Agent Evaluator": ClipboardCheck,
   Couchflix: Sofa,
+  "System Design Interviewer": Network,
   "AI Assistant for Backstage (RAG + TechDocs)": BrainCircuit,
   "Backstage CLI & MCP Server": Server,
   "n8n Node for Backstage": Workflow,
   "Reinforcement Learning Fundamentals": GraduationCap,
-  "Point & Click Toolkit (pctk)": Gamepad2,
+  scummgo: Gamepad2,
 };
 
 interface ProjectLinkProps {
