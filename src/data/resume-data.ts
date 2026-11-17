@@ -250,7 +250,7 @@ export const RESUME_DATA: ResumeData = {
       title: "Genetix",
       techStack: ["Elixir", "Genetic Algorithms"],
       description:
-        "Framework to run genetic algorithms in Elixir. Includes a vehicle route problem solver.",
+        "Framework to run genetic algorithms in Elixir, with a vehicle route problem solver.",
       link: {
         label: "github.com/jsolana/genetix",
         href: "https://github.com/jsolana/genetix",
@@ -270,7 +270,7 @@ export const RESUME_DATA: ResumeData = {
       title: ".NET Observability & Event-Driven Libraries",
       techStack: [".NET / C#", "Kafka", "Observability", "Event-Driven"],
       description:
-        "Open-source .NET libraries for event-driven architectures and observability: Kafka instrumentation, Zipkin tracing, resilient REST clients, and persistent retry patterns.",
+        "Open-source .NET libraries for event-driven architectures and observability: Kafka instrumentation, Zipkin tracing and resilient REST clients.",
       link: {
         label: "github.com/rfrancotechnologies",
         href: "https://github.com/rfrancotechnologies",
@@ -280,7 +280,7 @@ export const RESUME_DATA: ResumeData = {
       title: "Agent Evaluator",
       techStack: ["Go", "React", "SQLite", "LLM-as-a-Judge", "Agent Evaluation"],
       description:
-        "Agent-agnostic framework to evaluate conversational agents through multi-turn scenarios. Judges every turn with deterministic and LLM criteria, with traces, human annotations and run-to-run comparison to detect regressions.",
+        "Agent-agnostic framework to evaluate conversational agents through multi-turn scenarios, judged by deterministic and LLM criteria, with run-to-run regression comparison.",
       link: {
         label: "github.com/jsolana/agent-evaluator",
         href: "https://github.com/jsolana/agent-evaluator",
@@ -297,7 +297,7 @@ export const RESUME_DATA: ResumeData = {
         "LLM Agents",
       ],
       description:
-        "Entertainment discovery app that recommends what to watch from your taste profile, history and streaming platforms. Multi-provider catalog architecture (TMDB), rules-based agent with optional OpenAI-compatible/Anthropic LLM, animated audiovisual profile radar, and offline unit and Playwright acceptance tests.",
+        "Entertainment discovery app that recommends what to watch from your taste profile and streaming platforms, using a rules-based agent with optional LLM.",
       link: {
         label: "github.com/jsolana/couchflix",
         href: "https://github.com/jsolana/couchflix",
@@ -307,7 +307,7 @@ export const RESUME_DATA: ResumeData = {
       title: "System Design Interviewer",
       techStack: ["Python", "Gradio", "LLM Agents", "Mermaid", "System Design"],
       description:
-        "Practice system for system design interviews. Combines a markdown knowledge base (concepts, problems, level expectations) with a Gradio app where an interviewer agent runs the session and an evaluator agent returns a radar chart, level estimate and feedback, plus a Mermaid whiteboard. Works with any OpenAI-compatible endpoint.",
+        "Practice system for system design interviews: a knowledge base plus interviewer and evaluator agents that give a level estimate and feedback.",
       link: {
         label: "github.com/jsolana/system-design-interviewer",
         href: "https://github.com/jsolana/system-design-interviewer",
@@ -325,7 +325,7 @@ export const RESUME_DATA: ResumeData = {
         "Backstage",
       ],
       description:
-        "AI-powered assistant for Backstage built using a Retrieval-Augmented Generation (RAG) architecture. It enables conversational querying over technical documentation (TechDocs) using embeddings, semantic search, and a FAISS vector database.",
+        "Conversational assistant for Backstage that answers questions over TechDocs using a RAG architecture with embeddings and a FAISS vector database.",
       link: {
         label: "github.com/jsolana/backstage-ai-assistant",
         href: "https://github.com/jsolana/backstage-ai-assistant",
@@ -337,7 +337,7 @@ export const RESUME_DATA: ResumeData = {
       techStack: ["Go", "CLI", "MCP", "Backstage"],
 
       description:
-        "A CLI and MCP server that gives developers and AI assistants fast, unified access to Backstage from the terminal or any MCP-compatible tool.",
+        "CLI and MCP server giving developers and AI assistants unified access to Backstage from the terminal or any MCP-compatible tool.",
 
       link: {
         label: "github.com/jsolana/backctl",
@@ -357,7 +357,7 @@ export const RESUME_DATA: ResumeData = {
       ],
 
       description:
-        "Custom n8n node for integrating Backstage (backctl) into automated workflows, enabling Backstage operations to be orchestrated directly from n8n.",
+        "Custom n8n node that integrates Backstage (via backctl) so its operations can be orchestrated in automated workflows.",
 
       link: {
         label: "github.com/jsolana/n8n-nodes-backstage",
@@ -377,7 +377,7 @@ export const RESUME_DATA: ResumeData = {
         "Reinforcement Learning",
       ],
       description:
-        "Educational project focused on the fundamentals of Reinforcement Learning. It explores core concepts such as Markov Decision Processes (MDPs), policies, value functions, and Q-learning through classic environments like Blackjack and Pong.",
+        "Educational project on Reinforcement Learning fundamentals (MDPs, value functions, Q-learning) using classic environments like Blackjack and Pong.",
       link: {
         label: "github.com/jsolana/reinforcement-learning",
         href: "https://github.com/jsolana/reinforcement-learning",
@@ -393,7 +393,7 @@ export const RESUME_DATA: ResumeData = {
         "SCUMM-inspired",
       ],
       description:
-        "Toolkit for creating classic SCUMM-style point & click adventures (Monkey Island era) in Go. Games are a thin Go launcher plus Lua scripts for rooms, actors, dialogs and cutscenes, with assets described by YAML manifests and packed into binary resource files. Renders a retro 320x200 screen with the twelve classic verbs and inventory using raylib. Work in progress.",
+        "Go toolkit for building SCUMM-style point & click adventures, with Lua scripting, YAML-described assets and raylib rendering. Work in progress.",
       link: {
         label: "github.com/jsolana/scummgo",
         href: "https://github.com/jsolana/scummgo",
